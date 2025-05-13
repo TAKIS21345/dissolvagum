@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import EmailCaptureModal from "@/components/EmailCaptureModal";
-import ZendeskWidgetPlaceholder from "@/components/ZendeskWidgetPlaceholder";
 import { CartProvider } from "@/contexts/CartContext"; // Import CartProvider
 
 export default function ClientProviders({ children }: { children: React.ReactNode }) {
@@ -19,7 +18,12 @@ export default function ClientProviders({ children }: { children: React.ReactNod
 
     // Exit-intent modal
     const handleMouseOut = (event: MouseEvent) => {
-      if (event.clientY <= 0 && localStorage.getItem("dissolvagum_modal_shown") !== "true" && !isModalOpen && !showExitIntentModal) {
+      if (
+        event.clientY <= 0 &&
+        localStorage.getItem("dissolvagum_modal_shown") !== "true" &&
+        !isModalOpen &&
+        !showExitIntentModal
+      ) {
         setShowExitIntentModal(true);
       }
     };
@@ -39,10 +43,10 @@ export default function ClientProviders({ children }: { children: React.ReactNod
   };
 
   return (
-    <CartProvider> {/* Wrap children with CartProvider */}
+    <CartProvider>
+      {/* Wrap children with CartProvider */}
       {children}
       <EmailCaptureModal isOpen={isModalOpen || showExitIntentModal} onClose={closeModal} />
-      <ZendeskWidgetPlaceholder />
     </CartProvider>
   );
 }

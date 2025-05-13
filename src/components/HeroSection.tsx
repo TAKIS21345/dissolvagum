@@ -27,14 +27,6 @@ const HeroSection = () => {
 
       <div className="relative z-10 flex flex-col items-center text-center p-8 max-w-3xl mx-auto">
         {/* Placeholder for Video loop - could be an actual video or an animated SVG/GIF */}
-        <motion.div 
-          className="w-72 h-40 bg-black/30 dark:bg-black/50 rounded-lg mb-10 flex items-center justify-center shadow-xl backdrop-blur-sm"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-        >
-          <p className="text-sm text-white/80 font-glacial-indifference">[Conceptual Video: Gum dissolving elegantly]</p>
-        </motion.div>
 
         <motion.h1 
           className="font-glacial-indifference-bold text-5xl md:text-7xl font-bold mb-8 text-gray-800 dark:text-white leading-tight"

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ShoppingCart, Zap, RotateCcw, Minus, Plus } from "lucide-react";
+import { ShoppingCart, Minus, Plus } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,6 @@ interface Product {
   priceSingle: number;
   priceBundle: number;
   bundleSize: number;
-  subscriptionDiscount: number;
   description: string;
 }
 
@@ -25,8 +24,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
-  const [showSubscription, setShowSubscription] = useState(false);
-  const [deliveryFrequency, setDeliveryFrequency] = useState("monthly");
+  const [isBundle, setIsBundle] = useState(false); // Track if the bundle option is selected
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { addItem } = useCart();
 
@@ -34,30 +32,25 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     setQuantity((prev) => Math.max(1, prev + amount));
   };
 
-  const discountedPriceSingle = product.priceSingle * (1 - product.subscriptionDiscount);
-
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % product.images.length);
   };
 
   const handleAddToCart = () => {
-    const price = showSubscription ? discountedPriceSingle : product.priceSingle;
+    const price = isBundle ? product.priceBundle : product.priceSingle;
+    const name = isBundle
+      ? `${product.name} (Bundle of ${product.bundleSize})`
+      : product.name;
+
     addItem({
       id: product.id,
-      name: product.name,
+      name: name,
       price: price,
       quantity: quantity,
     });
-    toast.success(`${product.name} (x${quantity}) added to cart!`, {
+
+    toast.success(`${name} (x${quantity}) added to cart!`, {
       description: `Total: $${(price * quantity).toFixed(2)}`,
-      action: {
-        label: "View Cart",
-        onClick: () => {
-          // Assuming you have a way to open the cart, e.g., a global state or event
-          const cartButton = document.getElementById("cart-sheet-trigger");
-          if (cartButton) cartButton.click();
-        },
-      },
     });
   };
 
@@ -77,17 +70,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           objectFit="contain"
           className="transition-transform duration-500 ease-in-out group-hover:scale-105"
         />
-        {product.images.length > 1 && (
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={nextImage}
-            className="absolute bottom-3 right-3 bg-background/70 hover:bg-background text-foreground h-9 w-9 backdrop-blur-sm"
-            aria-label="Next image"
-          >
-            <RotateCcw size={16} />
-          </Button>
-        )}
       </div>
 
       <div className="p-5 md:p-6 flex flex-col flex-grow">
@@ -105,51 +87,29 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
         </div>
 
-        <div className="mb-5 p-3 bg-primary/10 dark:bg-primary/20 rounded-lg border border-primary/20">
-          <div className="flex items-center justify-between mb-2">
-            <label htmlFor={`subscribe-${product.id}`} className="text-sm font-glacial-indifference font-medium text-primary flex items-center cursor-pointer">
-              <Zap size={16} className="mr-2 flex-shrink-0" /> Subscribe & Save 15%
-            </label>
-            <input
-              type="checkbox"
-              id={`subscribe-${product.id}`}
-              checked={showSubscription}
-              onChange={() => setShowSubscription(!showSubscription)}
-              className="form-checkbox h-5 w-5 text-primary rounded focus:ring-primary border-border dark:bg-input dark:focus:ring-offset-background"
-            />
-          </div>
-          {showSubscription && (
-            <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} transition={{ duration: 0.3 }} className="mt-2 space-y-2">
-              <p className="text-xs text-primary/80">
-                Single pack w/ subscription: <span className="font-glacial-indifference-bold font-bold">${discountedPriceSingle.toFixed(2)}</span>
-              </p>
-              <div>
-                <label htmlFor={`frequency-${product.id}`} className="block text-xs font-medium text-muted-foreground mb-1">Delivery Frequency:</label>
-                <select
-                  id={`frequency-${product.id}`}
-                  value={deliveryFrequency}
-                  onChange={(e) => setDeliveryFrequency(e.target.value)}
-                  className="w-full p-2 text-xs border-border bg-input text-foreground rounded-md shadow-sm focus:ring-primary focus:border-primary"
-                >
-                  <option value="monthly">Monthly</option>
-                  <option value="quarterly">Quarterly</option>
-                </select>
-              </div>
-            </motion.div>
-          )}
-        </div>
-
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-4">
           <span className="text-sm text-muted-foreground font-glacial-indifference">Quantity:</span>
           <div className="flex items-center border border-border rounded-md overflow-hidden">
             <Button variant="ghost" size="icon" onClick={() => handleQuantityChange(-1)} className="h-9 w-9 rounded-none border-r border-border text-muted-foreground hover:bg-muted/50">
-              <Minus size={16}/>
+              <Minus size={16} />
             </Button>
             <span className="px-4 py-1 text-foreground tabular-nums font-medium w-12 text-center">{quantity}</span>
             <Button variant="ghost" size="icon" onClick={() => handleQuantityChange(1)} className="h-9 w-9 rounded-none border-l border-border text-muted-foreground hover:bg-muted/50">
-              <Plus size={16}/>
+              <Plus size={16} />
             </Button>
           </div>
+        </div>
+
+        <div className="flex items-center justify-between mb-6">
+          <label className="text-sm text-muted-foreground font-glacial-indifference">
+            <input
+              type="checkbox"
+              checked={isBundle}
+              onChange={(e) => setIsBundle(e.target.checked)}
+              className="mr-2"
+            />
+            Buy as Bundle
+          </label>
         </div>
 
         <Button

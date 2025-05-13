@@ -52,7 +52,7 @@ const EnvironmentalImpact = () => {
           >
             <h3 className="text-2xl font-semibold mb-4 text-gray-700 dark:text-white">The Problem with Traditional Gum</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
-              Traditional chewing gum is made from synthetic polymers, similar to plastics. It doesn\"t biodegrade, leading to unsightly litter on streets, under tables, and in public spaces. This waste is costly to clean up and contributes to plastic pollution.
+              Traditional chewing gum is made from synthetic polymers, similar to plastics. It doesn"t biodegrade, leading to unsightly litter on streets, under tables, and in public spaces. This waste is costly to clean up and contributes to plastic pollution.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-semibold">
               DissolvaGum offers a clean alternative. By dissolving completely, it leaves no trace, helping keep our environment cleaner, one chew at a time.

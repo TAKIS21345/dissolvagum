@@ -3,10 +3,13 @@
 import Link from 'next/link';
 import { Moon, Sun } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useCart } from '@/contexts/CartContext';
 
 const Header = () => {
+  const { items } = useCart();
   const [darkMode, setDarkMode] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -30,6 +33,8 @@ const Header = () => {
     }
   };
 
+  const totalItems = items.reduce((sum, item) => sum + item.quantity, 0); // Calculate total items from cart context
+
   if (!mounted) return null; // Avoid hydration mismatch
 
   return (
@@ -52,15 +57,16 @@ const Header = () => {
           >
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          {/* Placeholder for Review Aggregate Score */}
-          <div className="text-sm text-gray-600 dark:text-gray-400 hidden sm:block">
-            Avg. Rating: 4.8/5
-          </div>
            {/* Mobile Menu Button - Placeholder */}
           <button className="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-gray-700 dark:text-gray-300">
             {/* Icon for menu, e.g., Menu from lucide-react */}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
           </button>
+          <div className="relative">
+            <Link href="/cart" className="text-gray-800 dark:text-white focus:outline-none">
+              🛒 Cart ({totalItems})
+            </Link>
+          </div>
         </div>
       </div>
     </header>

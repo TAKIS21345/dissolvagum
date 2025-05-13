@@ -29,9 +29,9 @@ h1, h2, h3, h4, h5, h6 {
   :root {
     /* Light Mode - Pastel Greens & Blues from DissolvaGum Packaging */
     --radius: 0.5rem;
-    --sidebar-background: 150 50% 98%; /* Very Light Pastel Green */
-    --sidebar-foreground: 160 30% 30%; /* Darker Pastel Green-Blue */
-    --sidebar-primary: 170 60% 65%;    /* Medium Pastel Blue-Green */
+    --sidebar-background: 165 30% 12%; /* Dark Green-Blue (like darkest part of mountain) */
+    --sidebar-foreground: 150 35% 75%; /* Lighter Desaturated Green (text color on pack) */
+    --sidebar-primary: 150 40% 60%;    /* Medium Desaturated Green (accent on pack) */
     --sidebar-primary-foreground: 0 0% 100%; /* White */
     --sidebar-accent: 150 50% 92%;     /* Light Pastel Green */
     --sidebar-accent-foreground: 160 30% 30%; /* Darker Pastel Green-Blue */

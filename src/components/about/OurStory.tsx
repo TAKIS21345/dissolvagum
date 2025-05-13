@@ -32,10 +32,10 @@ const OurStory = () => {
               <Lightbulb className="text-yellow-500 mb-3" size={32} />
               <h3 className="text-2xl font-semibold mb-3 text-gray-700 dark:text-white">The Spark of Innovation</h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                "It all started on a park bench," recalls our founder, Alex Chen. "Seeing discarded gum everywhere, I thought, there has to be a better way. A way to enjoy the simple pleasure of chewing gum without the environmental burden or the sticky mess. That nagging thought became an obsession, a challenge I had to solve."
+                "It all started at school," recalls Taksh Nahata. "Seeing gum stuck everywhere, including on my shoe, I realized this was a problem that needed solving. That moment sparked the idea for DissolvaGum."
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
-                This initial frustration fueled years of research into biodegradable polymers and food-safe dissolving agents, leading to the breakthrough that is DissolvaGum.
+                This initial frustration led to years of research and collaboration, culminating in the creation of a gum that dissolves and leaves no mess behind.
               </p>
             </div>
           </motion.div>
