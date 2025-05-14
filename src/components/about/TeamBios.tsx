@@ -9,7 +9,7 @@ const teamMembers = [
 		name: "Taksh Nahata",
 		role: "Founder and CEO",
 		bio: "Taksh is the visionary who started DissolvaGum after experiencing the frustration of gum stuck to his shoe. His determination to solve this problem led to the creation of our innovative product.",
-		image: "/placeholder-taksh.png", // Placeholder image
+		image: "/taksh.png", // Placeholder image
 		social: {
 			linkedin: "#",
 			twitter: "#",
@@ -19,7 +19,7 @@ const teamMembers = [
 		name: "Tarakesvaran Aravindaan",
 		role: "Product Manager",
 		bio: "Tarakesvaran brings his expertise in product development and sustainability to the team, ensuring that DissolvaGum is both effective and eco-friendly.",
-		image: "/placeholder-tarakesvaran.png", // Placeholder image
+		image: "/tarakes.png", // Placeholder image
 		social: {
 			linkedin: "#",
 			twitter: "#",
@@ -29,7 +29,7 @@ const teamMembers = [
 		name: "Chanakya Mudhuganti",
 		role: "Chief Financial Officer",
 		bio: "Chanakya is the creative force behind our marketing campaigns, spreading the word about DissolvaGum's mission and benefits.",
-		image: "/placeholder-chanakya.png", // Placeholder image
+		image: "/chanu.png", // Placeholder image
 		social: {
 			linkedin: "#",
 			twitter: "#",
@@ -39,7 +39,7 @@ const teamMembers = [
 		name: "Shivam Sharma",
 		role: "Chief Marketing Officer",
 		bio: "Shivam ensures that our production processes are efficient and scalable, bringing DissolvaGum to more people around the world.",
-		image: "/placeholder-shivam.png", // Placeholder image
+		image: "/shivam.png", // Placeholder image
 		social: {
 			linkedin: "#",
 			twitter: "#",
@@ -84,9 +84,15 @@ const TeamBios = () => {
 								<Image
 									src={member.image}
 									alt={member.name}
-									layout="fill"
-									objectFit="cover"
-									className="bg-gray-300 dark:bg-gray-600" // Background for placeholder
+									fill
+									style={{
+										objectFit: "cover",
+										objectPosition: "center",
+										width: "100%",
+										height: "100%",
+									}}
+									className="rounded-full"
+									priority
 								/>
 							</div>
 							<h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">

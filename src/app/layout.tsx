@@ -39,10 +39,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Placeholder for Favicon links */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        {/* Favicon links updated to use the custom uploaded favicon */}
+        <link rel="icon" href="/image-removebg-preview%20(12).png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/image-removebg-preview%20(12).ico" type="image/x-icon" sizes="32x32" />
+        <link rel="shortcut icon" href="/image-removebg-preview%20(12).png" type="image/png" />
+        <link rel="apple-touch-icon" href="/image-removebg-preview%20(12).png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {/* Basic Schema Markup for Organization */}
         <script type="application/ld+json">
@@ -50,8 +51,8 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "DissolvaGum",
-            "url": "https://dissolvagum.example.com", // Placeholder URL
-            "logo": "https://dissolvagum.example.com/logo.png", // Placeholder Logo URL
+            "url": "https://dissolvagum.com",
+            "logo": "/image-removebg-preview%20(12).png",
             "description": "Eco-friendly, dissolvable chewing gum."
           })}
         </script>
