@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Moon, Sun } from 'lucide-react';
+import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useCart } from '@/contexts/CartContext';
 
@@ -9,7 +9,7 @@ const Header = () => {
   const { items } = useCart();
   const [darkMode, setDarkMode] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -33,42 +33,65 @@ const Header = () => {
     }
   };
 
-  const totalItems = items.reduce((sum, item) => sum + item.quantity, 0); // Calculate total items from cart context
-
-  if (!mounted) return null; // Avoid hydration mismatch
+  const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
+  if (!mounted) return null;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-teal-600 dark:text-teal-400">
-          DissolvaGum
+    <header className="w-full bg-gradient-to-r from-green-900 to-teal-700 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <Link href="/" className="flex items-center space-x-2">
+          <span className="text-2xl font-extrabold text-white tracking-tight">DissolvaGum</span>
         </Link>
-        <nav className="hidden md:flex space-x-6 items-center">
-          <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Home</Link>
-          <Link href="/shop" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">Shop</Link>
-          <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">About</Link>
-          <Link href="/how-it-works" className="text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">How It Works</Link>
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link href="/" className="text-white font-medium hover:text-teal-200 transition">Home</Link>
+          <Link href="/shop" className="text-white font-medium hover:text-teal-200 transition">Shop</Link>
+          <Link href="/about" className="text-white font-medium hover:text-teal-200 transition">About</Link>
+          <Link href="/how-it-works" className="text-white font-medium hover:text-teal-200 transition">How It Works</Link>
+          <Link href="/cart" className="flex items-center text-white font-medium hover:text-teal-200 transition">
+            <span className="mr-1">🛒</span> Cart ({totalItems})
+          </Link>
         </nav>
-        <div className="flex items-center space-x-4">
-          <button 
-            onClick={toggleDarkMode} 
-            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-gray-700 dark:text-gray-300"
+        <div className="flex items-center space-x-2 md:space-x-4">
+          <button
+            onClick={toggleDarkMode}
+            className="p-2 rounded-full hover:bg-teal-800/60 text-white transition"
             aria-label="Toggle dark mode"
           >
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-           {/* Mobile Menu Button - Placeholder */}
-          <button className="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-gray-700 dark:text-gray-300">
-            {/* Icon for menu, e.g., Menu from lucide-react */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <button
+            className="md:hidden p-2 rounded-full hover:bg-teal-800/60 text-white transition"
+            onClick={() => setIsMobileMenuOpen(true)}
+            aria-label="Open mobile menu"
+          >
+            <Menu size={28} />
           </button>
-          <div className="relative">
-            <Link href="/cart" className="text-gray-800 dark:text-white focus:outline-none">
-              🛒 Cart ({totalItems})
-            </Link>
-          </div>
         </div>
       </div>
+      {/* Mobile Drawer */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex flex-col">
+          <div className="flex justify-between items-center px-6 py-4">
+            <span className="text-2xl font-extrabold text-white">DissolvaGum</span>
+            <button
+              className="p-2 rounded-full hover:bg-teal-800/60 text-white"
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close mobile menu"
+            >
+              <X size={28} />
+            </button>
+          </div>
+          <nav className="flex flex-col items-center space-y-8 mt-8">
+            <Link href="/" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+            <Link href="/shop" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Shop</Link>
+            <Link href="/about" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+            <Link href="/how-it-works" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>How It Works</Link>
+            <Link href="/cart" className="flex items-center text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="mr-2">🛒</span> Cart ({totalItems})
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
