@@ -46,7 +46,6 @@ const Header = () => {
           <Link href="/" className="text-white font-medium hover:text-teal-200 transition">Home</Link>
           <Link href="/shop" className="text-white font-medium hover:text-teal-200 transition">Shop</Link>
           <Link href="/about" className="text-white font-medium hover:text-teal-200 transition">About</Link>
-          <Link href="/how-it-works" className="text-white font-medium hover:text-teal-200 transition">How It Works</Link>
           <Link href="/cart" className="flex items-center text-white font-medium hover:text-teal-200 transition">
             <span className="mr-1">🛒</span> Cart ({totalItems})
           </Link>
@@ -85,7 +84,6 @@ const Header = () => {
             <Link href="/" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             <Link href="/shop" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Shop</Link>
             <Link href="/about" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
-            <Link href="/how-it-works" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>How It Works</Link>
             <Link href="/cart" className="flex items-center text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>
               <span className="mr-2">🛒</span> Cart ({totalItems})
             </Link>

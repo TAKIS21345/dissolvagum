@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Linkedin, Twitter, Briefcase } from "lucide-react";
+import { Linkedin as LinkedIn, Twitter, Briefcase } from "lucide-react";
 
 const teamMembers = [
 	{
@@ -70,11 +70,11 @@ const TeamBios = () => {
 					</p>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div className="flex flex-row flex-wrap justify-center gap-8">
 					{teamMembers.map((member, index) => (
 						<motion.div
 							key={index}
-							className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center flex flex-col items-center"
+							className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center flex flex-col items-center w-full sm:w-80"
 							initial={{ opacity: 0, scale: 0.9 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							viewport={{ once: true, amount: 0.3 }}
@@ -106,24 +106,10 @@ const TeamBios = () => {
 							</p>
 							<div className="flex space-x-3">
 								{member.social.linkedin && (
-									<a
-										href={member.social.linkedin}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
-									>
-										<Linkedin size={20} />
-									</a>
+									null
 								)}
 								{member.social.twitter && (
-									<a
-										href={member.social.twitter}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
-									>
-										<Twitter size={20} />
-									</a>
+									null
 								)}
 							</div>
 						</motion.div>

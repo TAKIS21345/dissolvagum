@@ -17,15 +17,11 @@ const faqData = [
   },
   {
     question: "How long does it take for DissolvaGum to dissolve?",
-    answer: "The dissolving time can vary slightly, but it's generally designed to start breaking down after about 30-45 minutes of chewing and fully dissolve shortly thereafter. We are working on different formulations for varied dissolving times."
-  },
-  {
-    question: "Is DissolvaGum safe to swallow once it dissolves?",
-    answer: "Yes, DissolvaGum is made from food-grade, biodegradable ingredients that are safe for consumption and digestion once the gum has dissolved."
+    answer: "The dissolving time can vary slightly, but it's generally designed to start breaking down after about 2 hours and fully dissolve shortly thereafter. We are working on different formulations for varied dissolving times."
   },
   {
     question: "What flavors does DissolvaGum come in?",
-    answer: "Initially, we are launching with Spearmint and Peppermint flavors. We plan to introduce a wider range of flavors based on customer feedback and research."
+    answer: "Initially, we are launching with Spearmint, Watermelon, and Cherry Blast flavors. We plan to introduce a wider range of flavors based on customer feedback and research."
   },
   {
     question: "Where can I buy DissolvaGum?",
@@ -38,10 +34,6 @@ const faqData = [
   {
     question: "How does DissolvaGum compare to regular chewing gum?",
     answer: "DissolvaGum offers a similar chewing experience in terms of flavor and texture but with the significant benefit of being fully dissolvable and biodegradable, addressing the issue of gum litter."
-  },
-  {
-    question: "Can I subscribe to get DissolvaGum regularly?",
-    answer: "Yes, we offer a subscription service on our Shop page! You can choose your preferred flavors and delivery frequency to save money and ensure you never run out of DissolvaGum."
   }
 ];
 

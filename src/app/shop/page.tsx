@@ -77,14 +77,7 @@ const ShopPage = () => {
 						/>
 					))}
 				</div>
-				<div className="text-center mt-16">
-					<a
-						href="#" // Placeholder for bulk order inquiry
-						className="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-					>
-						Interested in bulk orders for your business? Contact us!
-					</a>
-				</div>
+
 			</main>
 			<Footer />
 		</div>
