@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientProviders from "@/components/ClientProviders"; // Import the new ClientProviders component
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,6 +61,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-900 transition-colors duration-300`}>
         <ClientProviders>
           {children}
+          <Analytics />
         </ClientProviders>
         {/* Placeholders for global scripts moved to ClientProviders or specific pages if they need client-side logic */}
       </body>

@@ -12,9 +12,6 @@ const products = [
 		name: "DissolvaGum - Spearmint (15 Sticks)",
 		images: [
 			"/dissolvagum-spearmint-pack.png",
-			"/dissolvagum-spearmint-front.png",
-			"/placeholder-gum-texture.png",
-			"/placeholder-gum-dissolve.png",
 		],
 		priceSingle: 2.99,
 		priceBundle: 24.99,

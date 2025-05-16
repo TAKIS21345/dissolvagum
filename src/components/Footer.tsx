@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -38,10 +38,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} DissolvaGum. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="#" aria-label="Facebook" className="hover:text-teal-400 transition-colors"><Facebook size={20}/></a>
-            <a href="#" aria-label="Twitter" className="hover:text-teal-400 transition-colors"><Twitter size={20}/></a>
-            <a href="#" aria-label="Instagram" className="hover:text-teal-400 transition-colors"><Instagram size={20}/></a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-teal-400 transition-colors"><Linkedin size={20}/></a>
+            <a href="" aria-label="Instagram" className="hover:text-teal-400 transition-colors"><Instagram size={20}/></a>
           </div>
         </div>
       </div>
