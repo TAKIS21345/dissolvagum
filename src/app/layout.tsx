@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientProviders from "@/components/ClientProviders"; // Import the new ClientProviders component
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,6 +63,7 @@ export default function RootLayout({
         <ClientProviders>
           {children}
           <Analytics />
+          <SpeedInsights />
         </ClientProviders>
         {/* Placeholders for global scripts moved to ClientProviders or specific pages if they need client-side logic */}
       </body>
