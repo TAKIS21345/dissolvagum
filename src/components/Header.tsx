@@ -40,7 +40,7 @@ const Header = () => {
     <header className="w-full bg-gradient-to-r from-green-900 to-teal-700 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-extrabold text-white tracking-tight">DissolvaGum</span>
+          <span className="text-2xl text-white tracking-widest font-glacial-indifference">DISSOLVAGUM</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="/" className="text-white font-medium hover:text-teal-200 transition">Home</Link>
@@ -71,7 +71,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-50 bg-black/90 flex flex-col">
           <div className="flex justify-between items-center px-6 py-4">
-            <span className="text-2xl font-extrabold text-white">DissolvaGum</span>
+            <span className="text-2xl font-extrabold text-white font-glacial-indifference">DISSOLVAGUM</span>
             <button
               className="p-2 rounded-full hover:bg-teal-800/60 text-white"
               onClick={() => setIsMobileMenuOpen(false)}

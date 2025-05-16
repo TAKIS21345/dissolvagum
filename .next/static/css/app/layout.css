@@ -2247,12 +2247,11 @@ video {
   font-style: normal;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+html, body, * {
+  font-family: "Glacial Indifference", sans-serif !important;
 }
 
-/* Apply Glacial Indifference to headings */
-h1, h2, h3, h4, h5, h6 {
+.font-glacial-indifference {
   font-family: "Glacial Indifference", sans-serif;
 }
 
