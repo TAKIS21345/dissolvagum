@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useCart } from '@/contexts/CartContext';
+import Image from 'next/image';
 
 const Header = () => {
   const { items } = useCart();
@@ -39,13 +40,26 @@ const Header = () => {
   return (
     <header className="w-full bg-gradient-to-r from-green-900 to-teal-700 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl text-white tracking-widest font-glacial-indifference">DISSOLVAGUM</span>
+        <Link href="/" className="flex items-center space-x-3 group">
+          <div className="relative w-10 h-10">
+            <Image
+              src="/image-removebg-preview (12).png"
+              alt="DissolvaGum Logo"
+              width={40}
+              height={40}
+              className="drop-shadow-lg group-hover:scale-110 transition-transform duration-300 will-change-transform"
+              style={{ filter: 'drop-shadow(0 2px 8px #0f766e88)' }}
+              priority
+            />
+          </div>
+          <span className="text-2xl text-white tracking-widest font-glacial-indifference drop-shadow-lg">DISSOLVAGUM</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="/" className="text-white font-medium hover:text-teal-200 transition">Home</Link>
           <Link href="/shop" className="text-white font-medium hover:text-teal-200 transition">Shop</Link>
           <Link href="/about" className="text-white font-medium hover:text-teal-200 transition">About</Link>
+          <Link href="/faq" className="text-white font-medium hover:text-teal-200 transition">FAQ</Link>
+          <Link href="/contact" className="text-white font-medium hover:text-teal-200 transition">Contact Us</Link>
           <Link href="/cart" className="flex items-center text-white font-medium hover:text-teal-200 transition">
             <span className="mr-1">🛒</span> Cart ({totalItems})
           </Link>
@@ -84,6 +98,8 @@ const Header = () => {
             <Link href="/" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             <Link href="/shop" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Shop</Link>
             <Link href="/about" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+            <Link href="/faq" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link>
+            <Link href="/contact" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
             <Link href="/cart" className="flex items-center text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>
               <span className="mr-2">🛒</span> Cart ({totalItems})
             </Link>

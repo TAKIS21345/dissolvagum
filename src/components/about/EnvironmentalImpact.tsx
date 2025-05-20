@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Leaf, BarChart2, Users } from "lucide-react";
+import { Leaf } from "lucide-react";
 
 const EnvironmentalImpact = () => {
   return (
@@ -20,49 +20,25 @@ const EnvironmentalImpact = () => {
             Chewing responsibly: How DissolvaGum helps reduce waste and protect our planet.
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Infographic Placeholder */}
-          <motion.div
-            className="bg-green-50 dark:bg-green-900/50 p-6 rounded-lg shadow-md flex flex-col items-center justify-center h-full"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6 }}
-          >
-            <BarChart2 className="text-green-600 dark:text-green-400 mb-4" size={64} />
-            <h3 className="text-xl font-semibold mb-3 text-green-700 dark:text-green-300 text-center">Waste Reduction Stats</h3>
-            {/* Placeholder for infographic content */}
-            <div className="text-center text-green-600 dark:text-green-400">
-              <p className="text-2xl font-bold">99%</p>
-              <p className="text-sm mb-2">Reduction in persistent gum litter</p>
-              <p className="text-2xl font-bold">ZERO</p>
-              <p className="text-sm">Microplastic pollution from our gum</p>
-            </div>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-4 text-center">*Illustrative statistics for showcase purposes.</p>
-          </motion.div>
-
-          {/* Comparison to Traditional Gum Waste */}
-          <motion.div
-            className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h3 className="text-2xl font-semibold mb-4 text-gray-700 dark:text-white">The Problem with Traditional Gum</h3>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
-              Traditional chewing gum is made from synthetic polymers, similar to plastics. It doesn"t biodegrade, leading to unsightly litter on streets, under tables, and in public spaces. This waste is costly to clean up and contributes to plastic pollution.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-semibold">
-              DissolvaGum offers a clean alternative. By dissolving completely, it leaves no trace, helping keep our environment cleaner, one chew at a time.
-            </p>
-            <div className="mt-4 pt-4 border-t border-gray-300 dark:border-gray-600">
-                <h4 className="text-md font-semibold text-gray-700 dark:text-white">Did you know?</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">It can cost local councils significant amounts annually to remove conventional gum litter from pavements.</p>
-            </div>
-          </motion.div>
-        </div>
+        <motion.div
+          className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <h3 className="text-2xl font-semibold mb-4 text-gray-700 dark:text-white">The Problem with Traditional Gum</h3>
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
+            Traditional chewing gum is made from synthetic polymers, similar to plastics. It doesn't biodegrade, leading to unsightly litter on streets, under tables, and in public spaces. This waste is costly to clean up and contributes to plastic pollution.
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-semibold">
+            DissolvaGum offers a clean alternative. By dissolving completely, it leaves no trace, helping keep our environment cleaner, one chew at a time.
+          </p>
+          <div className="mt-4 pt-4 border-t border-gray-300 dark:border-gray-600">
+            <h4 className="text-md font-semibold text-gray-700 dark:text-white">Did you know?</h4>
+            <p className="text-sm text-gray-500 dark:text-gray-400">It can cost local councils significant amounts annually to remove conventional gum litter from pavements.</p>
+          </div>
+        </motion.div>
       </div>
     </motion.section>
   );

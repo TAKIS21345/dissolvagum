@@ -1,9 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OurStory from "@/components/about/OurStory";
-import TheTechnology from "@/components/about/TheTechnology";
-import EnvironmentalImpact from "@/components/about/EnvironmentalImpact";
 import TeamBios from "@/components/about/TeamBios";
+import EnvironmentalImpact from "@/components/about/EnvironmentalImpact";
 
 const AboutPage = () => {
   return (
