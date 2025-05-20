@@ -7,44 +7,28 @@ import { Linkedin as LinkedIn, Twitter, Briefcase } from "lucide-react";
 const teamMembers = [
 	{
 		name: "Taksh Nahata",
-		role: "Founder and CEO",
+		role: "CEO",
 		bio: "Taksh is the visionary who started DissolvaGum after experiencing the frustration of gum stuck to his shoe. His determination to solve this problem led to the creation of our innovative product.",
 		image: "/taksh.png", // Placeholder image
-		social: {
-			linkedin: "#",
-			twitter: "#",
-		},
 	},
 	{
 		name: "Tarakesvaran Aravindaan",
 		role: "Product Manager",
 		bio: "Tarakesvaran brings his expertise in product development and sustainability to the team, ensuring that DissolvaGum is both effective and eco-friendly.",
 		image: "/tarakes.png", // Placeholder image
-		social: {
-			linkedin: "#",
-			twitter: "#",
 		},
-	},
 	{
 		name: "Chanakya Mudhuganti",
 		role: "Chief Financial Officer",
 		bio: "Chanakya is the creative force behind our marketing campaigns, spreading the word about DissolvaGum's mission and benefits.",
 		image: "/chanu.png", // Placeholder image
-		social: {
-			linkedin: "#",
-			twitter: "#",
 		},
-	},
 	{
 		name: "Shivam Sharma",
 		role: "Chief Marketing Officer",
 		bio: "Shivam ensures that our production processes are efficient and scalable, bringing DissolvaGum to more people around the world.",
 		image: "/shivam.png", // Placeholder image
-		social: {
-			linkedin: "#",
-			twitter: "#",
 		},
-	},
 ];
 
 const TeamBios = () => {
@@ -104,14 +88,6 @@ const TeamBios = () => {
 							<p className="text-sm text-gray-600 dark:text-gray-300 mb-4 flex-grow">
 								{member.bio}
 							</p>
-							<div className="flex space-x-3">
-								{member.social.linkedin && (
-									null
-								)}
-								{member.social.twitter && (
-									null
-								)}
-							</div>
 						</motion.div>
 					))}
 				</div>
