@@ -20,13 +20,13 @@ const teamMembers = [
 	{
 		name: "Chanakya Mudhuganti",
 		role: "Chief Financial Officer",
-		bio: "Chanakya is the creative force behind our marketing campaigns, spreading the word about DissolvaGum's mission and benefits.",
+		bio: "Chanakya oversees DissolvaGum’s financial strategy and operations, ensuring sustainable growth and responsible resource management. His analytical mindset and attention to detail keep our mission on solid financial ground.",
 		image: "/chanu.png", // Placeholder image
 		},
 	{
 		name: "Shivam Sharma",
 		role: "Chief Marketing Officer",
-		bio: "Shivam ensures that our production processes are efficient and scalable, bringing DissolvaGum to more people around the world.",
+		bio: "Shivam is the creative force behind our marketing campaigns, spreading the word about DissolvaGum's mission and benefits.",
 		image: "/shivam.png", // Placeholder image
 		},
 ];
