@@ -161,7 +161,7 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return undefined;
+/******/ 			return "static/chunks/" + chunkId + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -190,19 +190,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("ce7afa2808264270")
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
+/******/ 		__webpack_require__.h = () => ("aacfad40650e646a")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -760,7 +748,7 @@
 /******/ 			(function(linkTag) {
 /******/ 			                if (typeof _N_E_STYLE_LOAD === 'function') {
 /******/ 			                    const { href, onload, onerror } = linkTag;
-/******/ 			                    _N_E_STYLE_LOAD(new URL(href).pathname).then(()=>onload == null ? void 0 : onload.call(linkTag, {
+/******/ 			                    _N_E_STYLE_LOAD(href.indexOf(window.location.origin) === 0 ? new URL(href).pathname : href).then(()=>onload == null ? void 0 : onload.call(linkTag, {
 /******/ 			                            type: 'load'
 /******/ 			                        }), ()=>onerror == null ? void 0 : onerror.call(linkTag, {}));
 /******/ 			                } else {
