@@ -38,7 +38,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} DissolvaGum. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="" aria-label="Instagram" className="hover:text-teal-400 transition-colors"><Instagram size={20}/></a>
+            <a href="https://www.instagram.com/dissolvagum/" aria-label="Instagram" className="hover:text-teal-400 transition-colors"><Instagram size={20}/></a>
           </div>
         </div>
       </div>
