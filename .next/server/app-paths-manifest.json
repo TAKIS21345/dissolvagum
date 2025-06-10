@@ -1,3 +1,14 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/cart/page": "app/cart/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/how-it-works/page": "app/how-it-works/page.js",
+  "/legal/terms/page": "app/legal/terms/page.js",
+  "/legal/accessibility/page": "app/legal/accessibility/page.js",
+  "/legal/privacy/page": "app/legal/privacy/page.js",
+  "/legal/shipping/page": "app/legal/shipping/page.js",
+  "/page": "app/page.js",
+  "/shop/page": "app/shop/page.js",
+  "/faq/page": "app/faq/page.js"
 }
