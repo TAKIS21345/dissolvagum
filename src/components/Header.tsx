@@ -43,7 +43,7 @@ const Header = () => {
         <Link href="/" className="flex items-center space-x-3 group">
           <div className="relative w-10 h-10">
             <Image
-              src="/image-removebg-preview (12).png"
+              src="/og-image.png"
               alt="DissolvaGum Logo"
               width={40}
               height={40}
