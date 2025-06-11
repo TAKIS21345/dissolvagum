@@ -88,6 +88,7 @@ export default function RootLayout({
         <meta name="subject" content="Eco-Friendly Dissolvable Chewing Gum" />
         <meta name="language" content="English" />
         <meta name="coverage" content="Worldwide" />
+        <meta name="google-site-verification" content="U2zmStviN-onNwcuImdTdo-Lt1iflXPkxbUOwHAt0NU" />
         {/* Enhanced Schema Markup for Organization and FAQ */}
         <script type="application/ld+json">
           {JSON.stringify([
