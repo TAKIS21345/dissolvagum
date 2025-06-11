@@ -3,47 +3,44 @@ import LegalPageLayout from "@/components/LegalPageLayout";
 const PrivacyPage = () => {
   return (
     <LegalPageLayout title="Privacy Policy">
-      <p>Your privacy is important to us. It is DissolvaGum's policy to respect your privacy regarding any information we may collect from you across our website, [Your Website URL], and other sites we own and operate.</p>
-      
+      <p>Your privacy is important to us. It is DissolvaGum's policy to respect your privacy regarding any information we may collect from you across our website, dissolvagum.com, and other sites we own and operate.</p>
+
       <h2>1. Information We Collect</h2>
-      <p>Log data: When you visit our website, our servers may automatically log the standard data provided by your web browser. It may include your computer’s Internet Protocol (IP) address, your browser type and version, the pages you visit, the time and date of your visit, the time spent on each page, and other details.</p>
-      <p>Device data: We may also collect data about the device you’re using to access our website. This data may include the device type, operating system, unique device identifiers, device settings, and geo-location data.</p>
-      <p>Personal information: We may ask for personal information, such as your name, email, social media profiles, phone/mobile number, home/mailing address, payment information.</p>
+      <p>We may collect personal information such as your name, email address, shipping address, payment information, and any other details you provide when making a purchase or contacting us.</p>
+      <p>We may also collect non-personal information such as browser type, device information, and usage data to help us improve our website and services.</p>
 
       <h2>2. Legal Bases for Processing</h2>
-      <p>We will process your personal information lawfully, fairly and in a transparent manner. We collect and process information about you only where we have legal bases for doing so.</p>
-      <p>These legal bases depend on the services you use and how you use them, meaning we collect and use your information only where:</p>
+      <p>We will process your personal information lawfully, fairly, and in a transparent manner. We collect and use your information only where:</p>
       <ul>
-        <li>it’s necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract (for example, when we provide a service you request from us);</li>
-        <li>it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote our services, and to protect our legal rights and interests;</li>
-        <li>you give us consent to do so for a specific purpose (for example, you might consent to us sending you our newsletter); or</li>
-        <li>we need to process your data to comply with a legal obligation.</li>
+        <li>It is necessary for the performance of a contract with you (e.g., to fulfill your order).</li>
+        <li>You have given us consent to do so for a specific purpose (e.g., subscribing to our newsletter).</li>
+        <li>We need to process your data to comply with a legal obligation.</li>
       </ul>
 
       <h2>3. Collection and Use of Information</h2>
-      <p>We may collect, hold, use and disclose information for the following purposes and personal information will not be further processed in a manner that is incompatible with these purposes:</p>
+      <p>We may use your information for the following purposes:</p>
       <ul>
-        <li>to enable you to customize or personalize your experience of our website;</li>
-        <li>to enable you to access and use our website, associated applications and associated social media platforms;</li>
-        <li>to contact and communicate with you;</li>
-        <li>for internal record keeping and administrative purposes;</li>
-        <li>for analytics, market research and business development, including to operate and improve our website, associated applications and associated social media platforms;</li>
-        <li>to run competitions and/or offer additional benefits to you;</li>
-        <li>for advertising and marketing, including to send you promotional information about our products and services and information about third parties that we consider may be of interest to you;</li>
-        <li>to comply with our legal obligations and resolve any disputes that we may have.</li>
+        <li>To enable you to access and use our website and services.</li>
+        <li>To process and fulfill your orders.</li>
+        <li>To communicate with you, including responding to your inquiries and sending updates.</li>
+        <li>For analytics, market research, and business development to improve our website and services.</li>
+        <li>To comply with legal obligations and resolve disputes.</li>
       </ul>
 
-      <h2>4. Security of Your Personal Information</h2>
-      <p>When we collect and process personal information, and while we retain this information, we will protect it within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
-      <p>Although we will do our best to protect the personal information you provide to us, we advise that no method of electronic transmission or storage is 100% secure and no one can guarantee absolute data security. We will comply with laws applicable to us in respect of any data breach.</p>
+      <h2>4. Disclosure of Personal Information</h2>
+      <p>We do not share your personal information with third parties except as necessary to provide our services (such as payment processors and shipping companies), comply with the law, or protect our rights.</p>
 
-      <h2>5. How Long We Keep Your Personal Information</h2>
-      <p>We keep your personal information only for as long as we need to. This time period may depend on what we are using your information for, in accordance with this privacy policy. If your personal information is no longer required, we will delete it or make it anonymous by removing all details that identify you.</p>
+      <h2>5. Security of Your Information</h2>
+      <p>We take reasonable steps to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
 
-      <h2>Changes to This Policy</h2>
-      <p>At our discretion, we may change our privacy policy to reflect current acceptable practices. We will take reasonable steps to let users know about changes via our website. Your continued use of this site after any changes to this policy will be regarded as acceptance of our practices around privacy and personal information.</p>
-      
-      <p><em>This is a placeholder Privacy Policy page. Please replace with your own legal text.</em></p>
+      <h2>6. Your Rights and Choices</h2>
+      <p>You have the right to access, correct, or delete your personal information. You may also opt out of receiving marketing communications from us at any time.</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page. Your continued use of our website after any changes indicates your acceptance of the updated policy.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or our data practices, please contact us at <a href="mailto:team@dissolvagum.com">team@dissolvagum.com</a>.</p>
     </LegalPageLayout>
   );
 };

@@ -1,4 +1,4 @@
-// File: C:\Users\taksh\dissolvagum\src\app\legal\accessibility\page.tsx
+// File: /workspaces/dissolvagum/src/app/legal/accessibility/page.tsx
 import * as entry from '../../../../../src/app/legal/accessibility/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -52,15 +52,17 @@ const products = [
 ];
 
 const ShopPage = () => {
-	const [cart, setCart] = useState([]);
+	// Cart state should be an array of product objects
+	const [cart, setCart] = useState<typeof products>([]);
 
-	const addToCart = (product) => {
+	// addToCart should accept a product of the same type as in products
+	const addToCart = (product: typeof products[number]) => {
 		setCart((prevCart) => [...prevCart, product]);
 	};
 
 	return (
 		<div className="flex flex-col min-h-screen">
-			<Header cart={cart} />
+			<Header />
 			<main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-24">
 				<h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
 					Our Products
@@ -70,11 +72,9 @@ const ShopPage = () => {
 						<ProductCard
 							key={product.id}
 							product={product}
-							addToCart={addToCart}
 						/>
 					))}
 				</div>
-
 			</main>
 			<Footer />
 		</div>

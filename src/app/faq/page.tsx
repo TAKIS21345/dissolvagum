@@ -1,16 +1,9 @@
 "use client";
 
-// import { Metadata } from 'next'; // Removed
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { motion } from 'framer-motion'; // Added missing import for motion
+import { motion } from 'framer-motion';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-// Removed metadata export
-// export const metadata: Metadata = {
-//   title: 'FAQ - DissolvaGum',
-//   description: 'Frequently Asked Questions about DissolvaGum, the revolutionary dissolving chewing gum.',
-// };
 
 const faqData = [
 	{

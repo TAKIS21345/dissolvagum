@@ -1,4 +1,4 @@
-// File: C:\Users\taksh\dissolvagum\src\app\legal\privacy\page.tsx
+// File: /workspaces/dissolvagum/src/app/legal/privacy/page.tsx
 import * as entry from '../../../../../src/app/legal/privacy/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
