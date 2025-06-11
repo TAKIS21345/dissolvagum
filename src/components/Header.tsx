@@ -59,6 +59,8 @@ const Header = () => {
           <Link href="/shop" className="text-white font-medium hover:text-teal-200 transition">Shop</Link>
           <Link href="/about" className="text-white font-medium hover:text-teal-200 transition">About</Link>
           <Link href="/faq" className="text-white font-medium hover:text-teal-200 transition">FAQ</Link>
+          <Link href="/business-interest" className="text-white font-medium hover:text-teal-200 transition">Business Interest</Link>
+          <Link href="/support-interest" className="text-white font-medium hover:text-teal-200 transition">Support Interest</Link>
           <Link href="/contact" className="text-white font-medium hover:text-teal-200 transition">Contact Us</Link>
           <Link href="/cart" className="flex items-center text-white font-medium hover:text-teal-200 transition">
             <span className="mr-1">🛒</span> Cart ({totalItems})
@@ -99,6 +101,8 @@ const Header = () => {
             <Link href="/shop" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Shop</Link>
             <Link href="/about" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
             <Link href="/faq" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link>
+            <Link href="/business-interest" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Business Interest</Link>
+            <Link href="/support-interest" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Support Interest</Link>
             <Link href="/contact" className="text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
             <Link href="/cart" className="flex items-center text-white text-xl font-semibold hover:text-teal-200 transition" onClick={() => setIsMobileMenuOpen(false)}>
               <span className="mr-2">🛒</span> Cart ({totalItems})

@@ -64,6 +64,9 @@ const ShopPage = () => {
 		<div className="flex flex-col min-h-screen">
 			<Header />
 			<main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-24">
+				<div className="bg-yellow-100 text-yellow-900 text-center py-3 px-4 rounded mb-8 font-semibold border border-yellow-300">
+					Disclaimer: This is a demonstration of what the DissolvaGum shop page may look like once the product is fully developed. DissolvaGum is currently a concept and not available for purchase.
+				</div>
 				<h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
 					Our Products
 				</h1>

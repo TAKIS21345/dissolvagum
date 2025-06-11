@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 const ShippingReturnsPage = () => {
   return (
     <LegalPageLayout title="Shipping & Returns Policy">
+      <p><strong>Important:</strong> DissolvaGum is a hypothetical concept and not a real product or business. This website is for demonstration and awareness purposes only. No real products are being shipped or sold, and all information below is for demonstration only.</p>
       <h2>Shipping Policy</h2>
       <p>All orders for DissolvaGum products are processed within 1-2 business days (excluding weekends and holidays) after receiving your order confirmation email. You will receive another notification when your order has shipped.</p>
       
@@ -53,6 +54,7 @@ const ShippingReturnsPage = () => {
 
       <h3>Damaged or Incorrect Items</h3>
       <p>If you receive a damaged or incorrect item, please contact us immediately at support@dissolvagum.com with your order number and a photo of the item’s condition. We address these on a case-by-case basis and will work towards a satisfactory solution, including a replacement or refund.</p>
+      <p><strong>Note:</strong> As this is a hypothetical concept, no actual orders, shipping, or returns are being processed. All information above is for demonstration only.</p>
     </LegalPageLayout>
   );
 };

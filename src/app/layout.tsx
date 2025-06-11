@@ -9,13 +9,13 @@ const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata: Metadata = {
   title: "DissolvaGum - Chew Some Gum, Skip the Mess | Eco-Friendly Gum | Official Site",
-  description: "DissolvaGum is the world's first dissolvable, eco-friendly chewing gum. Enjoy plastic-free, biodegradable gum with zero waste. Discover sustainable, plant-based gum alternatives for a cleaner planet. Shop DissolvaGum for natural, vegan, and environmentally friendly chewing gum that dissolves completely—no mess, no litter, just pure flavor and freshness.",
+  description: "DissolvaGum is a hypothetical concept for an eco-friendly, dissolvable chewing gum. This website is for awareness and demonstration purposes only. Discover sustainable, plant-based gum alternatives for a cleaner planet. Join us in bringing this innovative product to life!",
   keywords: [
     "dissolvagum", "dissolva gum", "dissolvable gum", "eco-friendly gum", "biodegradable gum", "plastic free gum", "sustainable gum", "plant-based gum", "vegan gum", "natural gum", "zero waste gum", "environmentally friendly gum", "gum that dissolves", "compostable gum", "green chewing gum", "clean planet", "litter-free gum", "DissolvaGum official", "DissolvaGum shop", "DissolvaGum buy", "DissolvaGum website", "best eco gum", "healthy chewing gum", "sugar free gum", "innovative gum", "dissolving gum", "oral care", "fresh breath", "gum for environment"
   ],
   openGraph: {
     title: "DissolvaGum - Chew Some Gum, Skip the Mess | Eco-Friendly Gum | Official Site",
-    description: "DissolvaGum is the world's first dissolvable, eco-friendly chewing gum. No mess, no waste—just pure enjoyment and a cleaner planet.",
+    description: "DissolvaGum is a hypothetical concept for an eco-friendly, dissolvable chewing gum. No mess, no waste—just pure enjoyment and a cleaner planet.",
     type: "website",
     url: "https://dissolvagum.com",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "DissolvaGum - Chew Some Gum, Skip the Mess | Eco-Friendly Gum | Official Site",
-    description: "DissolvaGum is the world's first dissolvable, eco-friendly chewing gum. No mess, no waste—just pure enjoyment and a cleaner planet.",
+    description: "DissolvaGum is a hypothetical concept for an eco-friendly, dissolvable chewing gum. No mess, no waste—just pure enjoyment and a cleaner planet.",
     images: ["https://dissolvagum.com/twitter-image.png"],
     site: "@DissolvaGum",
     creator: "@DissolvaGum"
@@ -82,7 +82,7 @@ export default function RootLayout({
         <meta name="twitter:creator" content="@DissolvaGum" />
         <meta name="twitter:image" content="/twitter-image.png" />
         <meta name="twitter:image:alt" content="DissolvaGum Product Showcase" />
-        <meta name="description" content="DissolvaGum is the world's first dissolvable, eco-friendly chewing gum. Enjoy plastic-free, biodegradable gum with zero waste. Discover sustainable, plant-based gum alternatives for a cleaner planet. Shop DissolvaGum for natural, vegan, and environmentally friendly chewing gum that dissolves completely—no mess, no litter, just pure flavor and freshness." />
+        <meta name="description" content="DissolvaGum is a hypothetical concept for an eco-friendly, dissolvable chewing gum. This website is for awareness and demonstration purposes only. Discover sustainable, plant-based gum alternatives for a cleaner planet. Join us in bringing this innovative product to life!" />
         <meta name="keywords" content="dissolvagum, dissolva gum, dissolvable gum, eco-friendly gum, biodegradable gum, plastic free gum, sustainable gum, plant-based gum, vegan gum, natural gum, zero waste gum, environmentally friendly gum, gum that dissolves, compostable gum, green chewing gum, clean planet, litter-free gum, DissolvaGum official, DissolvaGum shop, DissolvaGum buy, DissolvaGum website, best eco gum, healthy chewing gum, sugar free gum, innovative gum, dissolving gum, oral care, fresh breath, gum for environment" />
         <meta name="subject" content="Eco-Friendly Dissolvable Chewing Gum" />
         <meta name="language" content="English" />
@@ -157,6 +157,9 @@ export default function RootLayout({
         </script>
       </head>
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-900 transition-colors duration-300`}>
+        <div className="bg-yellow-200 text-yellow-900 text-center py-3 px-4 font-semibold border-b border-yellow-400">
+          DissolvaGum is a hypothetical concept and not a real product. This website is for awareness and demonstration purposes only. We are seeking interest from businesses, supporters, and potential partners!
+        </div>
         <ClientProviders>
           {children}
           <Analytics />
