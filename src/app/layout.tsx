@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientProviders from "@/components/ClientProviders";
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import SurveyPopupClientWrapper from "@/components/SurveyPopupClientWrapper";
 
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
@@ -160,6 +161,7 @@ export default function RootLayout({
         <div className="bg-yellow-200 text-yellow-900 text-center py-3 px-4 font-semibold border-b border-yellow-400">
           DissolvaGum is a hypothetical concept and not a real product. This website is for awareness and demonstration purposes only. We are seeking interest from businesses, supporters, and potential partners!
         </div>
+        <SurveyPopupClientWrapper />
         <ClientProviders>
           {children}
           <Analytics />

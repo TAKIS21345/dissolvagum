@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"components/SurveyPopupClientWrapper.tsx -> @/components/SurveyPopup\":{\"id\":\"components/SurveyPopupClientWrapper.tsx -> @/components/SurveyPopup\",\"files\":[\"static/chunks/_app-pages-browser_src_components_SurveyPopup_tsx.js\"]}}"
