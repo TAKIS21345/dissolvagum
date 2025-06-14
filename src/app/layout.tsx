@@ -9,8 +9,8 @@ import SurveyPopupClientWrapper from "@/components/SurveyPopupClientWrapper";
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata: Metadata = {
-  title: "DissolvaGum - Chew Some Gum, Skip the Mess | Eco-Friendly Gum | Official Site",
-  description: "DissolvaGum is a hypothetical concept for an eco-friendly, dissolvable chewing gum. This website is for awareness and demonstration purposes only. Discover sustainable, plant-based gum alternatives for a cleaner planet. Join us in bringing this innovative product to life!",
+  title: "DissolvaGum | Eco-Friendly Dissolvable Gum Concept",
+  description: "DissolvaGum is a concept for eco-friendly, dissolvable chewing gum. This site is for awareness and demonstration only.",
   keywords: [
     "dissolvagum", "dissolva gum", "dissolvable gum", "eco-friendly gum", "biodegradable gum", "plastic free gum", "sustainable gum", "plant-based gum", "vegan gum", "natural gum", "zero waste gum", "environmentally friendly gum", "gum that dissolves", "compostable gum", "green chewing gum", "clean planet", "litter-free gum", "DissolvaGum official", "DissolvaGum shop", "DissolvaGum buy", "DissolvaGum website", "best eco gum", "healthy chewing gum", "sugar free gum", "innovative gum", "dissolving gum", "oral care", "fresh breath", "gum for environment"
   ],
@@ -74,7 +74,7 @@ export default function RootLayout({
         <meta property="og:image" content="/og-image.png" />
         <meta property="og:image:alt" content="DissolvaGum Logo" />
 
-        <meta name="description" content="DissolvaGum is a hypothetical concept for an eco-friendly, dissolvable chewing gum. This website is for awareness and demonstration purposes only. Discover sustainable, plant-based gum alternatives for a cleaner planet. Join us in bringing this innovative product to life!" />
+        <meta name="description" content="DissolvaGum is a concept for eco-friendly, dissolvable chewing gum. This site is for awareness and demonstration only." />
         <meta name="keywords" content="dissolvagum, dissolva gum, dissolvable gum, eco-friendly gum, biodegradable gum, plastic free gum, sustainable gum, plant-based gum, vegan gum, natural gum, zero waste gum, environmentally friendly gum, gum that dissolves, compostable gum, green chewing gum, clean planet, litter-free gum, DissolvaGum official, DissolvaGum shop, DissolvaGum buy, DissolvaGum website, best eco gum, healthy chewing gum, sugar free gum, innovative gum, dissolving gum, oral care, fresh breath, gum for environment" />
         <meta name="subject" content="Eco-Friendly Dissolvable Chewing Gum" />
         <meta name="language" content="English" />

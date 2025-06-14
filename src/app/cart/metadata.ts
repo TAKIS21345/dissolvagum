@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Your Cart | DissolvaGum",
-  description: "View and manage your DissolvaGum cart. Review your selected eco-friendly chewing gum products before checkout.",
+  title: "Your Cart | DissolvaGum Concept",
+  description: "View your DissolvaGum cart. This is a demonstration for our eco-friendly gum concept.",
   keywords: [
     "cart", "shopping cart", "DissolvaGum cart", "eco-friendly gum cart", "checkout"
   ],

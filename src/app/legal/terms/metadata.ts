@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | DissolvaGum",
-  description: "Read the terms and conditions for using DissolvaGum's website and services. Learn about our policies, user responsibilities, and legal information.",
+  title: "Terms & Conditions | DissolvaGum Concept",
+  description: "Read the terms and conditions for the DissolvaGum concept website.",
   keywords: [
     "terms and conditions", "DissolvaGum terms", "user agreement", "eco-friendly gum terms", "legal information"
   ],

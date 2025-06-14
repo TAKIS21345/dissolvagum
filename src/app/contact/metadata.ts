@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact DissolvaGum | Get in Touch",
-  description: "Contact DissolvaGum for questions, support, or feedback. Reach out to our team about our eco-friendly, dissolvable chewing gum.",
+  title: "Contact DissolvaGum | Concept Inquiry",
+  description: "Contact the DissolvaGum team about our eco-friendly gum concept.",
   keywords: [
     "contact DissolvaGum", "customer support", "eco-friendly gum contact", "dissolvable gum help", "contact us"
   ],

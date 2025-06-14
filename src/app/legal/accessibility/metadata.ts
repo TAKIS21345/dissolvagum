@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Accessibility Statement | DissolvaGum",
-  description: "Read the accessibility statement for DissolvaGum, the world's first dissolvable, eco-friendly chewing gum. Learn about our commitment to accessibility and inclusion.",
+  title: "Accessibility Statement | DissolvaGum Concept",
+  description: "Accessibility statement for the DissolvaGum concept website.",
   keywords: [
     "accessibility statement", "DissolvaGum accessibility", "inclusive design", "eco-friendly gum accessibility"
   ],

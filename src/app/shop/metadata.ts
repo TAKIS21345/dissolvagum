@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shop DissolvaGum | Buy Eco-Friendly Dissolvable Chewing Gum",
-  description: "Shop DissolvaGum's range of dissolvable, eco-friendly chewing gum. Plastic-free, biodegradable, and available in multiple flavors. Order online for fast shipping.",
+  title: "Shop DissolvaGum | Eco-Friendly Gum Mockup",
+  description: "Browse DissolvaGum's concept shop for eco-friendly, dissolvable gum. Not available for purchase.",
   keywords: [
     "shop DissolvaGum", "buy eco-friendly gum", "dissolvable gum shop", "sustainable chewing gum", "gum online store", "plastic-free gum"
   ],

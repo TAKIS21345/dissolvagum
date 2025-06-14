@@ -1,19 +1,8 @@
 import LegalPageLayout from "@/components/LegalPageLayout";
-import Head from "next/head";
 
 const AccessibilityStatementPage = () => {
   return (
     <>
-      <Head>
-        <title>Accessibility Statement | DissolvaGum</title>
-        <meta name="description" content="Read the accessibility statement for DissolvaGum, the world's first dissolvable, eco-friendly chewing gum. Learn about our commitment to accessibility and inclusion." />
-        <meta property="og:title" content="Accessibility Statement | DissolvaGum" />
-        <meta property="og:description" content="Read the accessibility statement for DissolvaGum, the world's first dissolvable, eco-friendly chewing gum. Learn about our commitment to accessibility and inclusion." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://dissolvagum.com/legal/accessibility" />
-        <meta property="og:site_name" content="DissolvaGum" />
-        <meta name="robots" content="index, follow" />
-      </Head>
       <LegalPageLayout title="Accessibility Statement">
         <p><strong>Important:</strong> DissolvaGum is a hypothetical concept and not a real product or business. This website is for demonstration and awareness purposes only.</p>
         <p>DissolvaGum is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
