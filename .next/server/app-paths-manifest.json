@@ -1,7 +1,5 @@
 {
-  "/legal/privacy/page": "app/legal/privacy/page.js",
-  "/business-interest/page": "app/business-interest/page.js",
-  "/shop/page": "app/shop/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/support-interest/page": "app/support-interest/page.js"
+  "/shop/page": "app/shop/page.js"
 }

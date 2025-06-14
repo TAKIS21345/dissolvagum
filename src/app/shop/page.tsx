@@ -23,10 +23,7 @@ const products = [
 		id: "2",
 		name: "DissolvaGum - Watermelon (15 Sticks)",
 		images: [
-			"/placeholder-gum-pack.png",
-			"/placeholder-gum-sticks.png",
-			"/placeholder-gum-texture.png",
-			"/placeholder-gum-dissolve.png",
+			"/20250614_1259_High-Quality Gum Package_remix_01jxr0a3aseqn89rk2g8ykvx9n.png"
 		],
 		priceSingle: 2.99,
 		priceBundle: 24.99,
@@ -38,10 +35,7 @@ const products = [
 		id: "3",
 		name: "DissolvaGum - Cherry Blast (15 Sticks)",
 		images: [
-			"/placeholder-gum-pack.png",
-			"/placeholder-gum-sticks.png",
-			"/placeholder-gum-texture.png",
-			"/placeholder-gum-dissolve.png",
+			"/20250614_1323_Cherry Blast Gum_remix_01jxr1qdbkf589c132m2w34gf8.png"
 		],
 		priceSingle: 2.99,
 		priceBundle: 24.99,
