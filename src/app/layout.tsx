@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: undefined, // No Twitter metadata since you don't have an account
   alternates: {
-    canonical: "https://www.dissolvagum.com/",
+    canonical: "https://dissolvagum.com",
   },
   robots: {
     index: true,
