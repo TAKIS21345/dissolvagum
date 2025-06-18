@@ -34,7 +34,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
         >
-          Chew Freely, Leave Nothing Behind.
+          Chew Some Gum, Skip the Mess.
         </motion.h1>
         
         <motion.p 
